@@ -1,0 +1,74 @@
+<header>
+    <div class="cont row">
+        <div class="logo">
+            <a href="index.html" class="name">
+                VIRO NEWS
+            </a>
+
+            <div class="desc">
+                Предупреждён, значит, вооружён
+            </div>
+        </div>
+
+        <div class="search modal_cont">
+            <button class="btn mini_modal_btn" data-modal-id="#search_modal">
+                <svg class="icon">
+                    <use xlink:href="/local/templates/viro/images/sprite.svg#ic_search"></use>
+                </svg>
+            </button>
+
+            <div class="mini_modal" id="search_modal">
+                <form action="https://vironews.ru/search/">
+                    <button id="search-submit-button" name="s" type="submit" class="">
+                        <svg class="icon">
+                            <use xlink:href="/local/templates/viro/images/sprite.svg#ic_search"></use>
+                        </svg>
+                    </button>
+
+                    <input id="title-searchs-input" type="text" name="q" value="" size="40"
+                        placeholder="Я ищу..." class="input" maxlength="100" autocomplete="off" />
+                    <button type="button" class="close_btn">
+                        <svg>
+                            <use xlink:href="/local/templates/viro/images/sprite.svg#ic_close"></use>
+                        </svg>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- div class="account">
+        <button class="login_btn modal_btn" data-modal="#login_modal">Войти</button>
+    </div -->
+
+        <div class="sep"></div>
+
+        <button class="mob_menu_btn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="cont row mob_menu">
+        <button class="mob_close_btn"></button>
+
+        <nav class="menu row">
+            <div class="menu_item">
+                <a href="news/index.html">Новости</a>
+            </div>
+            <div class="menu_item">
+                <a href="klinicheskie_rekomendacii/index.html">Клинические рекомендации</a>
+            </div>
+            <div class="menu_item">
+                <a href="terapiya/index.html">Терапия</a>
+            </div>
+            <div class="menu_item">
+                <a href="peredajte_pacientam/index.html">Передайте пациентам</a>
+            </div>
+            <div class="menu_item">
+                <a href="video/index.html">Видео</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+</header>
