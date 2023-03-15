@@ -367,6 +367,11 @@
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 960px) {
+  .articles-survey__wrapper {
+    min-height: 240px;
+  }
+}
 .articles-survey__inner {
   position: relative;
   z-index: 2;
@@ -376,9 +381,13 @@
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 100%;
-  text-transform: uppercase;
+  line-height: 120%;
   color: #fff;
+}
+@media (max-width: 960px) {
+  .articles-survey__title {
+    font-size: 24px;
+  }
 }
 .articles-survey__align {
   text-align: left;
@@ -386,16 +395,29 @@
   padding-top: 20px;
 }
 .articles-survey__link {
+  font-family: "Raleway";
   display: inline-block;
   border-radius: 40px;
   text-decoration: none;
   color: #fff;
+  font-weight: 500;
   padding: 24px 60px;
   background-color: #ea7327;
-  text-transform: uppercase;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+@media (max-width: 960px) {
+  .articles-survey__link {
+    padding: 20px 60px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .articles-survey__link {
+    width: 100%;
+    text-align: center;
+  }
 }
 .articles-survey__link:hover {
   background-color: #f9843c;
