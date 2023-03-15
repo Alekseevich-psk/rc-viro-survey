@@ -3,7 +3,7 @@ const project_flr = "dist";
 const source_flr = "app";
 const baseDir = "./" + project_flr + "/";
 const fs = require('fs');
-const pathFiles = "/assets/";
+const pathFiles = "/";
 const outPathFiles = "/assets/template/";
 
 // main path
@@ -20,7 +20,7 @@ let path = {
     },
     src: {
         html: source_flr + "/html/*.html",
-        css: source_flr + "/scss/style.scss",
+        css: source_flr + "/scss/*.scss",
         js: source_flr + "/scripts/**/*.js",
         video: source_flr + "/video/*.{mp4,webm,ogv,swf}",
         img: source_flr + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -124,18 +124,18 @@ function js() {
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(concat('scripts.js'))
+        .pipe(concat('survey.js'))
         .pipe(dest(path.build.js))
-        .pipe(
-            uglify()
-        )
-        .pipe(
-            rename({
-                basename: "scripts",
-                extname: ".min.js"
-            })
-        )
-        .pipe(dest(path.build.js))
+        // .pipe(
+        //     uglify()
+        // )
+        // .pipe(
+        //     rename({
+        //         basename: "scripts",
+        //         extname: ".min.js"
+        //     })
+        // )
+        // .pipe(dest(path.build.js))
         .pipe(browsersync.stream())
 }
 
