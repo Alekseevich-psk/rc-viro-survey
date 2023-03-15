@@ -317,7 +317,7 @@
                 text-decoration: underline;
             }
 
-            &:before {
+            &:before, &:after {
                 position: absolute;
                 top: 4px;
                 left: -40px;
@@ -334,11 +334,16 @@
             color: $active;
 
             &:before {
-                background-position: 50% 50%;
-                background-size: 50% 50%;
-                background-repeat: no-repeat;
-                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' fill='none' viewBox='0 0 15 15'%3e%3ccircle cx='7.5' cy='7.5' r='7.5' fill='%23EA7327' transform='matrix(-1 0 0 1 15 0)'/%3e%3c/svg%3e");
                 border: 3px solid $active;
+            }
+
+            &:after {
+                width: 16px;
+                height: 16px;
+                top: 9px;
+                left: -35px;
+                border: 1px solid $active;
+                background-color: $active;
             }
         }
     }

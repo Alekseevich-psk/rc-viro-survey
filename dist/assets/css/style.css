@@ -312,7 +312,7 @@
   color: #1151ab;
   text-decoration: underline;
 }
-.survey__form-input ~ label:before {
+.survey__form-input ~ label:before, .survey__form-input ~ label:after {
   position: absolute;
   top: 4px;
   left: -40px;
@@ -327,9 +327,79 @@
   color: #ea7327;
 }
 .survey__form-input:checked ~ label:before {
-  background-position: 50% 50%;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' fill='none' viewBox='0 0 15 15'%3e%3ccircle cx='7.5' cy='7.5' r='7.5' fill='%23EA7327' transform='matrix(-1 0 0 1 15 0)'/%3e%3c/svg%3e");
   border: 3px solid #ea7327;
+}
+.survey__form-input:checked ~ label:after {
+  width: 16px;
+  height: 16px;
+  top: 9px;
+  left: -35px;
+  border: 1px solid #ea7327;
+  background-color: #ea7327;
+}
+
+.articles-survey__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("../images/hash-001.jpg");
+}
+.articles-survey__bg:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #235091;
+}
+.articles-survey__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.articles-survey__inner {
+  position: relative;
+  z-index: 2;
+}
+.articles-survey__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+}
+.articles-survey__align {
+  text-align: left;
+  width: 100%;
+  padding-top: 20px;
+}
+.articles-survey__link {
+  display: inline-block;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  padding: 24px 60px;
+  background-color: #ea7327;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.articles-survey__link:hover {
+  background-color: #f9843c;
+}
+.articles-survey__link:active {
+  background-color: #bf5817;
 }

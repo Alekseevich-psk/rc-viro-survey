@@ -1,0 +1,69 @@
+.articles-survey {
+    &__bg {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url("../images/hash-001.jpg");
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background-color: #235091;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        min-height: 100%;
+        align-items: flex-end;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__align {
+        text-align: left;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    &__link {
+        display: inline-block;
+        border-radius: 40px;
+        text-decoration: none;
+        color: #fff;
+        padding: 24px 60px;
+        background-color: #ea7327;
+        text-transform: uppercase;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #f9843c;
+        }
+
+        &:active {
+            background-color: #bf5817;
+        }
+    }
+}
