@@ -24,7 +24,7 @@
     &__wrapper {
         display: flex;
         min-height: 100%;
-        align-items: flex-end;
+        // align-items: flex-end;
 
         @media(max-width: 960px) {
             min-height: 240px;
@@ -39,9 +39,9 @@
     &__title {
         font-family: "Raleway";
         font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 120%;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 115%;
         // text-transform: uppercase;
         color: #fff;
 
@@ -51,9 +51,11 @@
     }
 
     &__align {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
         text-align: left;
         width: 100%;
-        padding-top: 20px;
     }
 
     &__link {
